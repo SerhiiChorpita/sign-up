@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page1">
+      <div class="box1">
+        <p>Create your account</p>
+      </div>
+      <form name="f1" class="box2">
+        <p>First name</p>
+        <input
+          type="text"
+          name="firstName"
+          class="input-field"
+          placeholder="type here..."
+        />
+      </form>
+      <form name="f2" class="box3">
+        <p>Second name</p>
+        <input
+          type="text"
+          name="secondName"
+          class="input-field"
+          placeholder="type here..."
+        />
+      </form>
+      <form name="f3" class="box4">
+        <p>Email address</p>
+        <input
+          type="email"
+          name="emailAdress"
+          class="input-field"
+          placeholder="enter email"
+        />
+      </form>
+      <form name="f4" onclick="perChoise()" class="box5">
+        <input type="radio" name="human" id="Choice1" checked/>
+        <label for="Choice1">man</label>
+        <input type="radio" name="human" id="Choice2" />
+        <label for="Choice2">woman</label>
+      </form>
+      <form name="f5" class="box6">
+        <p>Position</p>
+        <select
+          name="position"
+          id="position"
+          onchange="posChange()"
+          class="input-field"
+        >
+          <option value="Choose..." selected>Choose...</option>
+          <option value="Frontend">Frontend</option>
+          <option value="Backend">Backend</option>
+          <option value="QC/QA">QC/QA</option>
+        </select>
+      </form>
+      <form name="f6" class="box7" onchange="agreeOn()">
+        <input type="checkbox" id="checkbox" />
+        <label for="checkbox">I agree all statements in Terms of service</label>
+      </form>
+      <div class="box8">
+        <button type="button" onclick="pageChange1()" id="button" disabled>
+          Sign Up
+        </button>
+      </div>
+    </div>
+    <div class="page2-back">
+      <div class="page2">
+        <div class="box9"></div>
+        <div class="box10">
+          <div id="person-image"></div>
+        </div>
+        <div class="box11">
+          <p id="name"></p>
+          <p id="email"></p>
+          <p id="profession"></p>
+        </div>
+        <div class="box12">
+          <button type="button" onclick="pageChange2()" id="sign-out">
+            Sign Out
+          </button>
+        </div>
+        <div class="box13">
+          <link rel="stylesheet" href="" />
+          <img src="image/link/facebook.svg" class="img-down" />
+          <img src="image/link/github.svg" class="img-down" />
+          <img src="image/link/linkedin.svg" class="img-down" />
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
